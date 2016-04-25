@@ -1,6 +1,5 @@
-# codecheck.yml is a file to define how to run your test.
-# build: array --- commands to run before running test
-# test: string --- command to run test
+build:
+- bundle install
 env:
-  APP_COMMAND: echo
+  APP_COMMAND: ruby main.rb
 test: mocha
